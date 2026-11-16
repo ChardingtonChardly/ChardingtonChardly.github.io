@@ -3,472 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard Palmer-Smyth | Programme &amp; PMO Consultant</title>
-    <meta name="description" content="Programme and PMO leader with 30+ years in technology delivery. Programme health checks, PMO set-up, plans and budgets. Based in Dorset, working UK-wide.">
-    <style>
-        :root {
-            --primary: #1a3a52;
-            --accent: #2c5f7e;
-            --text: #1a1a1a;
-            --text-light: #4a4a4a;
-            --background: #fafafa;
-            --card: #ffffff;
-            --border: #e0e0e0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background: var(--background);
-            font-size: 16px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 30px;
-            background: var(--card);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
-            animation: fadeIn 0.6s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        header {
-            text-align: center;
-            padding-bottom: 40px;
-            border-bottom: 2px solid var(--primary);
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            font-family: Georgia, 'Times New Roman', serif;
-            font-size: 3em;
-            font-weight: 700;
-            color: var(--primary);
-            letter-spacing: -0.5px;
-            margin-bottom: 15px;
-        }
-
-        .contact-info {
-            font-size: 0.95em;
-            color: var(--text-light);
-            margin-top: 15px;
-        }
-
-        .contact-info a {
-            color: var(--accent);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .contact-info a:hover {
-            color: var(--primary);
-        }
-
-        .separator {
-            margin: 0 8px;
-            color: var(--border);
-        }
-
-        h2 {
-            font-family: Georgia, 'Times New Roman', serif;
-            font-size: 1.8em;
-            font-weight: 700;
-            color: var(--primary);
-            margin-top: 45px;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--accent);
-            position: relative;
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 60px;
-            height: 2px;
-            background: var(--primary);
-        }
-
-        h3 {
-            font-family: Georgia, 'Times New Roman', serif;
-            font-size: 1.3em;
-            font-weight: 600;
-            color: var(--text);
-            margin-top: 25px;
-            margin-bottom: 5px;
-        }
-
-        .role-meta {
-            font-size: 0.95em;
-            color: var(--text-light);
-            font-style: italic;
-            margin-bottom: 12px;
-        }
-
-        .role-summary {
-            font-style: italic;
-            color: var(--text-light);
-            margin-bottom: 12px;
-            line-height: 1.5;
-        }
-
-        p {
-            margin-bottom: 15px;
-            line-height: 1.7;
-            text-align: justify;
-        }
-
-        ul {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        ul li {
-            position: relative;
-            padding-left: 25px;
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        ul li::before {
-            content: '▪';
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        .competencies-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .competency {
-            padding: 15px;
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-            border-left: 3px solid var(--accent);
-            transition: all 0.3s ease;
-        }
-
-        .competency:hover {
-            transform: translateX(5px);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-
-        .competency strong {
-            color: var(--primary);
-        }
-
-        .cert-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 10px;
-            padding: 8px 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .cert-item:last-child {
-            border-bottom: none;
-        }
-
-        .cert-name {
-            font-weight: 600;
-            color: var(--text);
-        }
-
-        .cert-date {
-            color: var(--text-light);
-            font-size: 0.9em;
-        }
-
-        .strengths-list {
-            background: linear-gradient(135deg, #f0f4f7 0%, #ffffff 100%);
-            padding: 25px;
-            border-radius: 4px;
-            margin-top: 15px;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2em;
-            }
-            
-            .container {
-                padding: 40px 20px;
-            }
-
-            .contact-info {
-                font-size: 0.85em;
-            }
-
-            .separator {
-                display: block;
-                margin: 5px 0;
-                visibility: hidden;
-            }
-        }
-
-        @media print {
-            body {
-                background: white;
-            }
-            
-            .container {
-                box-shadow: none;
-                max-width: 100%;
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 2.2em;
-            }
-
-            h2 {
-                font-size: 1.5em;
-                margin-top: 30px;
-            }
-
-            .competency:hover {
-                transform: none;
-            }
-        }
-
-        .tagline { font-size: 1.15em; color: var(--accent); margin-top: 6px; }
-        .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 10px; }
-        .service { border: 1px solid var(--border); border-top: 4px solid var(--accent); padding: 18px; background: #fff; }
-        .service h4 { font-family: Georgia, 'Times New Roman', serif; color: var(--primary); font-size: 1.1em; margin-bottom: 4px; }
-        .service .duration { font-size: 0.85em; color: var(--text-light); margin-bottom: 8px; }
-        .service p { text-align: left; font-size: 0.95em; margin-bottom: 0; }
-        .highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-        .highlight { background: var(--primary); color: #fff; padding: 18px; }
-        .highlight .figure { font-family: Georgia, 'Times New Roman', serif; font-size: 1.5em; font-weight: 700; color: #f2b45c; }
-        .highlight p { text-align: left; font-size: 0.92em; margin: 6px 0 0; color: #e6edf3; }
-        .cta { text-align: center; margin-top: 45px; padding: 28px; background: #f0f4f7; }
-        .cta a.button { display: inline-block; margin-top: 10px; padding: 12px 26px; background: var(--primary); color: #fff; text-decoration: none; font-weight: 600; }
-        footer { text-align: center; font-size: 0.85em; color: var(--text-light); margin-top: 30px; }
-        @media (max-width: 768px) { .services, .highlights { grid-template-columns: 1fr; } }
-    </style>
+    <title>Richard Palmer-Smyth | Programme & PMO Leader</title>
+    <meta name="description" content="Richard Palmer-Smyth: programme and PMO leader with 30+ years in technology delivery, available for permanent roles, interim and contract PMO work, and local tech help in North Dorset through The Tech Whisperer.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="site-nav"><div class="inner">
+        <a class="brand" href="index.html">Richard Palmer-Smyth</a>
+        <a href="cv.html">Full CV</a>
+        <a href="consulting.html">Interim &amp; PMO</a>
+        <a href="techwhisperer.html">The Tech Whisperer</a>
+        <a href="mailto:richard.smyth4@sky.com">Contact</a>
+    </div></nav>
     <div class="container">
-        <header>
+        <header class="page-head">
             <h1>Richard Palmer-Smyth</h1>
-            <div class="tagline">Programme &amp; PMO Consultant &middot; Telecoms &amp; Technology Delivery</div>
+            <div class="tagline">Programme &amp; PMO Leader &middot; Technology Delivery &middot; North Dorset</div>
             <div class="contact-info">
-                Sturminster Newton, Dorset
-                <span class="separator">|</span>
                 <a href="tel:+447717512025">07717 512025</a>
-                <span class="separator">|</span>
+                <span class="sep">|</span>
                 <a href="mailto:richard.smyth4@sky.com">richard.smyth4@sky.com</a>
-                <br>
-                <a href="https://linkedin.com/in/palmersmythconsulting" target="_blank" rel="noopener">linkedin.com/in/palmersmythconsulting</a>
-                <span class="separator">|</span>
-                <a href="https://www.twine.net/PalmerSmyth" target="_blank" rel="noopener">Twine portfolio</a>
+                <span class="sep">|</span>
+                <a href="https://linkedin.com/in/palmersmythconsulting" target="_blank" rel="noopener">LinkedIn</a>
             </div>
         </header>
 
         <section>
-            <h2>Summary</h2>
-            <p>Programme and PMO leader with 30+ years in technology delivery, including senior programme and portfolio roles at Vodafone, O2 / Virgin Media O2, Lebara and Tech Mahindra. I help organisations get control of change quickly: a credible plan, clear governance, a budget that adds up, and a team that knows what happens next. Available for interim and contract programme roles, and for short fixed-scope engagements.</p>
+            <p>I'm a programme and PMO leader with more than 30 years in technology, from SAP development to running delivery portfolios at Vodafone, O2 and Virgin Media O2. I help organisations get control of change: a credible plan, clear governance, a budget that adds up, and a team that knows what happens next.</p>
+            <p>Closer to home, I run The Tech Whisperer, giving friendly, jargon-free tech help to people and small businesses in North Dorset.</p>
+            <p>There are three ways to work with me:</p>
         </section>
 
-        <section>
-            <h2>How I Can Help</h2>
-            <div class="services">
-                <div class="service">
-                    <h4>Programme Health Check</h4>
-                    <div class="duration">5 days</div>
-                    <p>An independent review of plan, risks, budget and governance, with a written recovery plan.</p>
-                </div>
-                <div class="service">
-                    <h4>PMO in a Box</h4>
-                    <div class="duration">1&ndash;3 weeks</div>
-                    <p>RAID log, integrated plan (POAP), reporting templates and governance cadence, handed over ready to run.</p>
-                </div>
-                <div class="service">
-                    <h4>Plan &amp; Budget Sprint</h4>
-                    <div class="duration">1&ndash;2 weeks</div>
-                    <p>Turn an idea into a costed plan and business case that decision-makers can approve.</p>
-                </div>
+        <section class="grid3">
+            <div class="card">
+                <div class="for">Permanent roles &amp; longer contracts</div>
+                <h3>Programme &amp; PMO leadership</h3>
+                <p>Programme manager, PMO lead or head of delivery roles in technology and telecoms. My full CV covers my experience, achievements and qualifications.</p>
+                <a class="button" href="cv.html">Read my CV</a>
+            </div>
+            <div class="card">
+                <div class="for">Interim, temporary &amp; short engagements</div>
+                <h3>Interim &amp; PMO services</h3>
+                <p>Fixed-scope help when you need it: a programme health check, a PMO set up from scratch, or a costed plan and budget, from a few days to a few months.</p>
+                <a class="button" href="consulting.html">See services</a>
+            </div>
+            <div class="card tw">
+                <div class="for">Homes &amp; small businesses in North Dorset</div>
+                <h3>The Tech Whisperer</h3>
+                <p>Friendly, jargon-free help with wi-fi, broadband, phones, laptops, printers, solar apps and the digital phone switchover, plus support for local small businesses.</p>
+                <a class="button" href="techwhisperer.html">Find out more</a>
             </div>
         </section>
-
-        <section>
-            <h2>Track Record</h2>
-            <div class="highlights">
-                <div class="highlight">
-                    <div class="figure">World first</div>
-                    <p>5G Standalone roaming implementation for Sky Mobile (VMO2).</p>
-                </div>
-                <div class="highlight">
-                    <div class="figure">12&ndash;24 &rarr; ~6 months</div>
-                    <p>MVNO onboarding time with &ldquo;MVNO in a Box&rdquo;; cost to connect cut from &pound;1&ndash;3M to ~&pound;350k.</p>
-                </div>
-                <div class="highlight">
-                    <div class="figure">~&pound;9M &rarr; &pound;3.5M</div>
-                    <p>Roaming clearing-house contract renegotiated to a 3-year fixed price.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Core Competencies</h2>
-            <div class="competencies-grid">
-                <div class="competency">
-                    <strong>Programme &amp; Portfolio Leadership</strong> &mdash; Multi-year roadmaps, portfolio prioritisation, PMO frameworks, RAID management
-                </div>
-                <div class="competency">
-                    <strong>Delivery Leadership &amp; Governance</strong> &mdash; Full lifecycle accountability, change control, stakeholder alignment, data-driven reporting
-                </div>
-                <div class="competency">
-                    <strong>Service Operations &amp; MVNO/Wholesale Expertise</strong> &mdash; Operational readiness, SLA/OLA frameworks, partner experience management, network KPI improvement
-                </div>
-                <div class="competency">
-                    <strong>Executive &amp; Commercial Engagement</strong> &mdash; Steering committees, senior reporting, vendor management and contract negotiation support
-                </div>
-                <div class="competency">
-                    <strong>Technical Fluency</strong> &mdash; SAP development background, OSS/BSS architecture understanding, data-oriented analysis
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Professional Experience</h2>
-
-            <h3>Programme Manager</h3>
-            <div class="role-meta">Tech Mahindra (embedded within VMO2 CIO) | February 2026 &ndash; Present</div>
-            <p class="role-summary">Programme leadership for a wholesale programme within VMO2's CIO organisation: planning, governance, RAID management, vendor alignment and senior stakeholder engagement.</p>
-            <ul>
-                <li>Built an integrated plan, schedule and resource forecast from an uncommitted starting position</li>
-                <li>Kept delivery on track through significant organisational change</li>
-            </ul>
-
-            <h3>Head of Network Experience</h3>
-            <div class="role-meta">Lebara Mobile UK | February 2025 – November 2025</div>
-            <p class="role-summary">Recruited to build Network Experience function from scratch to improve customer experience on existing LMVNO platform and lead FMVNO platform rollout. Established cross-functional team (Interconnect, Billing, Test & Change) and implemented governance for network KPI visibility. Role ended due to strategic reorganisation.</p>
-            <ul>
-                <li>Defined £2.3M revenue protection programme targeting 2.5% churn reduction through escalation improvements and customer experience enhancements</li>
-                <li>Built new Network Experience team from ground up, recruiting key roles and ensuring seamless integration into wider organisation</li>
-                <li>Led migration activities to onboard first Lebara customers onto FMVNO platform, establishing clear roadmap and governance model</li>
-                <li>Defined and implemented new network KPIs with Vodafone (LMVNO/FMVNO) and Lebara Technology for inclusion in future RFPs and SLAs</li>
-                <li>Drove improvements in cross-functional communication and introduced processes to improve incident ticket quality and reduce MNO escalations</li>
-            </ul>
-
-            <h3>Head of Wholesale Solutions</h3>
-            <div class="role-meta">Virgin Media O2 Business | April 2022 – February 2025</div>
-            <p class="role-summary">Senior leadership role following O2/Virgin Media merger. Built and led Wholesale Solutions function accountable for MVNO/wholesale service architecture, operational readiness, and partner governance. Managed £3M+ budget and team of 5 direct reports.</p>
-            <ul>
-                <li>Built Wholesale Solutions function and team from inception, establishing governance frameworks and delivery operating model</li>
-                <li>Owned wholesale service engagement during major O2 IT stack transformation, safeguarding service continuity for wholesale partners</li>
-                <li>Delivered 5G SA and voice capability upgrades (VoLTE, VoWiFi) for partner adoption across wholesale estate</li>
-                <li>Provided senior input to complex commercial and contract negotiations, supporting resolution of partner relationship challenges</li>
-                <li>Negotiated and delivered new London Underground service agreement for Sky Mobile</li>
-            </ul>
-
-            <h3>MVNO Service Development Manager</h3>
-            <div class="role-meta">O2 (Telefonica UK) | September 2015 – April 2022</div>
-            <p class="role-summary">Owned MVNO/wholesale service definitions, design artefacts, SLA/OLA frameworks, readiness and launch governance across multiple partners including Lyca Mobile, Truphone, and senior ownership of Tesco Mobile transformation programme.</p>
-            <ul>
-                <li>Delivered major MVNO launches including Truphone full implementation from bid response through to operational delivery</li>
-                <li>Designed 'MVNO in a Box' repeatable service model, reducing onboarding time and enabling lower MRC thresholds for agile MVNOs</li>
-                <li>Delivered 5G capability uplift for wholesale partners including Lyca Mobile</li>
-                <li>Led complex Tesco Mobile transformation as senior TUK owner, implementing governance across TUK/Tesco/Capita stakeholders</li>
-            </ul>
-
-            <h3>Portfolio Manager</h3>
-            <div class="role-meta">Travelport | March 2014 – August 2015</div>
-            <p class="role-summary">Managed global portfolio pipeline and investment governance across Galileo, Apollo and Worldspan platforms. Responsible for $4M budget.</p>
-            <ul>
-                <li>Redesigned investment lifecycle governance and intake prioritisation, improving forecasting accuracy and risk transparency</li>
-                <li>Strengthened alignment between commercial and delivery stakeholders through improved portfolio-level visibility</li>
-            </ul>
-
-            <h3>Transformation Portfolio PMO Lead</h3>
-            <div class="role-meta">Vodafone UK | April 2013 – March 2014</div>
-            <p class="role-summary">Led PMO for one of Vodafone's largest IT transformations replacing legacy core systems across Consumer and Enterprise. Portfolio budget £520M across three major programmes (New Co, RLTP, Website Redesign).</p>
-            <ul>
-                <li>Designed and embedded portfolio governance frameworks, improving RAID management and executive decision quality</li>
-                <li>Integrated multi-workstream roadmaps and dependency structures, providing consolidated portfolio visibility</li>
-            </ul>
-
-            <h3>Senior IT Project Manager & Portfolio Manager</h3>
-            <div class="role-meta">Vodafone UK | October 2010 – March 2013</div>
-            <p class="role-summary">Led delivery of Estate Simplification portfolio including call centre consolidation, data centre builds and multi-site migrations. Managed £1M+ Capex and team of 5 project managers.</p>
-            <ul>
-                <li>Delivered £0.5M–£3.5M portfolio projects on time and budget across multi-location estates</li>
-                <li>Developed VPDL Lite agile methodology for rapid-turnaround projects, reducing administrative overhead</li>
-            </ul>
-
-            <div class="role-meta" style="margin-top: 25px;"><strong>Earlier Vodafone roles (2006–2010):</strong> IT Project Manager, Small Projects Manager, Demand Analyst, Project Support Officer</div>
-
-            <h3>SAP Development & Technical Leadership</h3>
-            <div class="role-meta">Bayer UK & RMC UK | 1994 – 2005</div>
-            <p class="role-summary">Progressed from Operations Analyst to SAP Development Manager. Led teams of up to 10 developers, delivered large-scale legacy-to-SAP migration, solution design, integration, ABAP development and Basis/DBA responsibilities.</p>
-        </section>
-
-        <section>
-            <h2>Education & Certifications</h2>
-            <div class="cert-item">
-                <span class="cert-name">Databricks Generative AI Fundamentals</span>
-                <span class="cert-date">December 2025</span>
-            </div>
-            <div class="cert-item">
-                <span class="cert-name">ITIL Foundation in IT Service Management</span>
-                <span class="cert-date">February 2017</span>
-            </div>
-            <div class="cert-item">
-                <span class="cert-name">Lean Six Sigma Yellow Belt</span>
-                <span class="cert-date">February 2016</span>
-            </div>
-            <div class="cert-item">
-                <span class="cert-name">Managing Successful Programmes (MSP) Practitioner</span>
-                <span class="cert-date">November 2014</span>
-            </div>
-            <div class="cert-item">
-                <span class="cert-name">PRINCE2 Foundation</span>
-                <span class="cert-date">March 2012</span>
-            </div>
-            <div class="cert-item">
-                <span class="cert-name">HNC Business and Finance</span>
-                <span class="cert-date">BTEC National Diploma (1992–1994)</span>
-            </div>
-        </section>
-
-        <section>
-            <h2>Professional Strengths</h2>
-            <div class="strengths-list">
-                <ul>
-                    <li>Builds delivery/service governance and stabilisation frameworks that enable rather than constrain</li>
-                    <li>Bridges technical, operational and commercial stakeholders through clear translation and credible challenge</li>
-                    <li>Improves predictability and executive decision confidence through structured communication and transparent reporting</li>
-                    <li>Calm, credible senior presence in complex environments with an integrity-led, pragmatic leadership style</li>
-                </ul>
-            </div>
-        </section>
-
-        <div class="cta">
-            <strong>Need a plan, a PMO or a programme back on track?</strong><br>
-            <a class="button" href="mailto:richard.smyth4@sky.com?subject=Programme%20%2F%20PMO%20enquiry">Get in touch</a>
-        </div>
-
-        <footer>&copy; Richard Palmer-Smyth</footer>
     </div>
+    <footer>&copy; Richard Palmer-Smyth &middot; Sturminster Newton, Dorset</footer>
 </body>
 </html>
